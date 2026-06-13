@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Optimized conda channels for astrodynamics and space technology",
+    "note": "Listed in priority order - first match wins"
+  },
+  "primary_channels": [
+    {
+      "name": "conda-forge",
+      "url": "https://prefix.dev/conda-forge",
+      "priority": 1,
+      "description": "Community-driven conda packages - 99% of space tech libs available",
+      "mirrors": [
+        "https://conda-forge.org",
+        "https://anaconda.org/conda-forge"
+      ]
+    }
+  ],
+  "specialized_channels": [
+    {
+      "name": "bioconda",
+      "url": "https://conda.anaconda.org/bioconda",
+      "priority": 2,
+      "description": "Bioinformatics tools - useful for space biology experiments",
+      "use_for": ["space-biology", "astrobiology"]
+    }
+  ],
+  "recommended_for_all": [
+    "conda-forge"
+  ],
+  "notes": [
+    "Use prefix.dev mirror for faster downloads globally",
+    "conda-forge contains all 68 curated astrodynamics libraries",
+    "bioconda is optional - only needed for biological payload analysis",
+    "For air-gapped environments, mirror conda-forge internally"
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "domain": "astrodynamics",
+    "total_presets": 15,
+    "description": "Common astrodynamics and spacecraft engineering tasks with preset library selections"
+  },
+  "presets": [
+    {
+      "id": "orbital-mechanics-core",
+      "name": "Orbital Mechanics Design",
+      "description": "Fundamental orbital mechanics - trajectory design, propagation, optimization",
+      "skill_level": "beginner",
+      "libraries": [
+        "poliastro", "numpy", "scipy", "matplotlib", "jupyter",
+        "astropy", "uncertainties"
+      ],
+      "features": ["orbital-core", "visualization-basic"],
+      "environments": ["design"],
+      "channels": ["conda-forge"]
+    },
+    {
+      "id": "advanced-trajectory-optimization",
+      "name": "Trajectory Optimization & Mission Planning",
+      "description": "Advanced trajectory design with multi-objective optimization",
+      "skill_level": "advanced",
+      "libraries": [
+        "pykep", "pygmo", "poliastro", "tudatpy", "numpy", "scipy",
+        "plotly", "jupyter", "uncertainties", "sympy"
+      ],
+      "features": ["orbital-core", "optimization-stack", "visualization-3d"],
+      "environments": ["advanced-design"],
+      "channels": ["conda-forge"]
+    },
+    {
+      "id": "satellite-propagation",
+      "name": "Satellite Propagation & Ephemeris",
+      "description": "High-fidelity satellite propagation and positional accuracy",
+      "skill_level": "intermediate",
+      "libraries": [
+        "spiceypy", "sgp4", "skyfield", "astropy", "numpy",
+        "scipy", "jupyter", "plotly"
+      ],
+      "features": ["ephemeris-stack", "visualization-basic"],
+      "environments": ["propagation"],
+      "channels": ["conda-forge"]
+    },
+    {
+      "id": "spacecraft-dynamics-simulation",
+      "name": "Spacecraft Dynamics & N-Body Simulation",
+      "description": "High-fidelity multi-body dynamics and complex spacecraft interactions",
+      "skill_level": "advanced",
+      "libraries": [
+        "rebound", "heyoka", "nyx-space", "tudatpy", "numpy",
+        "scipy", "plotly", "jupyter", "mayavi"
+      ],
+      "features": ["dynamics-core", "visualization-3d", "numerical-integration"],
+      "environments": ["simulation"],
+      "channels": ["conda-forge"]
+    },
+    {
+      "id": "attitude-control-gnc",
+      "name": "Attitude Determination & Control Systems",
+      "description": "ADCS design - quaternions, angular momentum, control algorithms",
+      "skill_level": "advanced",
+      "libraries": [
+        "tudatpy", "numpy", "scipy", "sympy", "plotly", "jupyter",
+        "scikit-learn", "uncertainties"
+      ],
+      "features": ["attitude-control", "visualization-basic", "ml-basics"],
+      "environments": ["gnc-design"],
+      "channels": ["conda-forge"]
+    },
+    {
+      "id": "bayesian-mission-analysis",
+      "name": "Bayesian Inference for Mission Analysis",
+      "description": "Uncertainty quantification and Bayesian parameter estimation",
+      "skill_level": "advanced",
+      "libraries": [
+        "pymc", "arviz", "numpy", "scipy", "emcee", "pandas",
+        "plotly", "jupyter", "statsmodels"
+      ],
+      "features": ["bayesian-inference", "visualization-basic"],
+      "environments": ["analysis"],
+      "channels": ["conda-forge"]
+    },
+    {
+      "id": "telemetry-data-analysis",
+      "name": "Spacecraft Telemetry & Data Analysis",
+      "description": "Process and analyze satellite/spacecraft telemetry data",
+      "skill_level": "intermediate",
+      "libraries": [
+        "pandas", "polars", "numpy", "scipy", "scikit-learn",
+        "plotly", "jupyter", "h5py", "statsmodels"
+      ],
+      "features": ["data-processing", "visualization-basic", "ml-basics"],
+      "environments": ["telemetry"],
+      "channels": ["conda-forge"]
+    },
+    {
+      "id": "ml-trajectory-prediction",
+      "name": "Machine Learning for Trajectory Prediction",
+      "description": "Train neural networks to predict spacecraft trajectories",
+      "skill_level": "advanced",
+      "libraries": [
+        "pytorch", "poliastro", "numpy", "scipy", "scikit-learn",
+        "pandas", "plotly", "jupyter", "tensorboard"
+      ],
+      "features": ["ml-pipeline", "trajectory-core", "visualization-basic"],
+      "environments": ["ml-training"],
+      "channels": ["conda-forge"]
+    },
+    {
+      "id": "satellite-image-analysis",
+      "name": "Satellite Image Analysis & Computer Vision",
+      "description": "Process remote sensing data and detect spacecraft features",
+      "skill_level": "advanced",
+      "libraries": [
+        "opencv-python", "pytorch", "torchvision", "scikit-learn",
+        "numpy", "scipy", "plotly", "jupyter", "albumentations"
+      ],
+      "features": ["computer-vision", "ml-pipeline", "visualization-basic"],
+      "environments": ["imagery"],
+      "channels": ["conda-forge"]
+    },
+    {
+      "id": "ground-station-operations",
+      "name": "Ground Station Operations & Communications",
+      "description": "Manage ground station equipment and satellite communications",
+      "skill_level": "intermediate",
+      "libraries": [
+        "pyzmq", "pyserial", "numpy", "pandas", "plotly",
+        "jupyter", "fastapi", "loguru"
+      ],
+      "features": ["ground-station", "data-processing"],
+      "environments": ["operations"],
+      "channels": ["conda-forge"]
+    },
+    {
+      "id": "mission-planning-optimization",
+      "name": "Mission Planning & Multi-Objective Optimization",
+      "description": "Complex mission planning with competing objectives",
+      "skill_level": "advanced",
+      "libraries": [
+        "pygmo", "pykep", "poliastro", "numpy", "scipy",
+        "plotly", "jupyter", "prefect", "statsmodels"
+      ],
+      "features": ["optimization-stack", "workflow-automation", "visualization-basic"],
+      "environments": ["planning"],
+      "channels": ["conda-forge"]
+    },
+    {
+      "id": "celestial-mechanics-research",
+      "name": "Celestial Mechanics & Theoretical Research",
+      "description": "Research-grade celestial mechanics with symbolic computation",
+      "skill_level": "advanced",
+      "libraries": [
+        "sympy", "numpy", "scipy", "jupyter", "rebound",
+        "plotly", "mayavi", "astropy", "emcee"
+      ],
+      "features": ["symbolic-math", "dynamics-core", "visualization-3d"],
+      "environments": ["research"],
+      "channels": ["conda-forge"]
+    },
+    {
+      "id": "spacecraft-anomaly-detection",
+      "name": "Spacecraft Anomaly Detection & Diagnostics",
+      "description": "Detect anomalies in telemetry using ML",
+      "skill_level": "advanced",
+      "libraries": [
+        "scikit-learn", "xgboost", "lightgbm", "pandas", "numpy",
+        "scipy", "plotly", "jupyter", "statsmodels"
+      ],
+      "features": ["ml-pipeline", "data-processing", "visualization-basic"],
+      "environments": ["diagnostics"],
+      "channels": ["conda-forge"]
+    },
+    {
+      "id": "autonomous-navigation",
+      "name": "Autonomous Navigation & Guidance",
+      "description": "Autonomous spacecraft navigation systems",
+      "skill_level": "advanced",
+      "libraries": [
+        "anise", "spiceypy", "skyfield", "numpy", "scipy",
+        "scikit-learn", "pytorch", "jupyter", "plotly"
+      ],
+      "features": ["navigation-core", "ml-basics", "visualization-basic"],
+      "environments": ["navigation"],
+      "channels": ["conda-forge"]
+    },
+    {
+      "id": "full-stack-mission-simulation",
+      "name": "Full Stack Mission Simulation",
+      "description": "Complete end-to-end mission simulation with all subsystems",
+      "skill_level": "elite",
+      "libraries": [
+        "tudatpy", "nyx-space", "pykep", "pygmo", "pymc",
+        "pytorch", "numpy", "scipy", "plotly", "jupyter",
+        "mayavi", "prefect", "pandas", "h5py"
+      ],
+      "features": ["orbital-core", "dynamics-core", "bayesian-inference", "ml-pipeline", "visualization-3d", "workflow-automation"],
+      "environments": ["full-simulation"],
+      "channels": ["conda-forge"]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+"""
+Pixi Features Configuration for Astrodynamics Projects
+This file defines reusable feature groups for pixi.toml generation
+"""
+
+[feature.orbital-core]
+description = "Core orbital mechanics - fundamental astrodynamics"
+dependencies = {poliastro = "*", astropy = "*", numpy = "*", scipy = "*"}
+platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
+
+[feature.ephemeris-stack]
+description = "Ephemeris and positional calculations"
+dependencies = {spiceypy = "*", skyfield = "*", astropy = "*", numpy = "*"}
+platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
+
+[feature.optimization-stack]
+description = "Trajectory optimization and mission design"
+dependencies = {pykep = "*", pygmo = "*", poliastro = "*", numpy = "*", scipy = "*"}
+platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
+
+[feature.dynamics-core]
+description = "High-fidelity multi-body dynamics simulation"
+dependencies = {rebound = "*", heyoka = "*", nyx-space = "*", tudatpy = "*", numpy = "*", scipy = "*"}
+platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
+
+[feature.attitude-control]
+description = "Attitude determination and control systems"
+dependencies = {tudatpy = "*", numpy = "*", scipy = "*", sympy = "*"}
+platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
+
+[feature.bayesian-inference]
+description = "Bayesian statistical modeling and MCMC"
+dependencies = {pymc = "*", arviz = "*", emcee = "*", numpy = "*", scipy = "*"}
+platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
+
+[feature.navigation-core]
+description = "Autonomous navigation and guidance systems"
+dependencies = {anise = "*", spiceypy = "*", skyfield = "*", numpy = "*", scipy = "*"}
+platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
+
+[feature.symbolic-math]
+description = "Symbolic mathematics and analytical solutions"
+dependencies = {sympy = "*", mpmath = "*", numpy = "*"}
+platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
+
+[feature.numerical-integration]
+description = "Advanced numerical integration and ODE solving"
+dependencies = {scipy = "*", numpy = "*", diffrax = "*"}
+platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
+
+[feature.visualization-basic]
+description = "Basic 2D and 3D visualization"
+dependencies = {plotly = "*", jupyter = "*", numpy = "*"}
+platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
+
+[feature.visualization-3d]
+description = "Advanced 3D visualization and scientific rendering"
+dependencies = {plotly = "*", mayavi = "*", jupyter = "*", numpy = "*", VPython = "*"}
+platforms = ["linux-64", "osx-64", "win-64"]
+
+[feature.ml-basics]
+description = "Machine learning fundamentals"
+dependencies = {scikit-learn = "*", numpy = "*", scipy = "*", pandas = "*"}
+platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
+
+[feature.ml-pipeline]
+description = "Full ML pipeline with deep learning"
+dependencies = {pytorch = "*", scikit-learn = "*", numpy = "*", scipy = "*", pandas = "*"}
+platforms = ["linux-64", "osx-64", "win-64"]
+
+[feature.computer-vision]
+description = "Computer vision and image processing"
+dependencies = {opencv-python = "*", pytorch = "*", torchvision = "*", numpy = "*"}
+platforms = ["linux-64", "osx-64", "win-64"]
+
+[feature.data-processing]
+description = "Data manipulation and analysis"
+dependencies = {pandas = "*", polars = "*", numpy = "*", h5py = "*"}
+platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
+
+[feature.ground-station]
+description = "Ground station operations and communications"
+dependencies = {pyzmq = "*", pyserial = "*", numpy = "*", pandas = "*"}
+platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
+
+[feature.workflow-automation]
+description = "Mission operations and workflow orchestration"
+dependencies = {prefect = "*", airflow = "*", loguru = "*"}
+platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
+
+[feature.trajectory-core]
+description = "Trajectory propagation and analysis"
+dependencies = {poliastro = "*", sgp4 = "*", numpy = "*", scipy = "*"}
+platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
