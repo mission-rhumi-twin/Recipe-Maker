@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "domain": "astrodynamics",
+    "total_libraries": 68,
+    "last_updated": "2026-06-08",
+    "description": "Curated space technology and astrodynamics libraries available on conda-forge/PyPI"
+  },
+  "core_astrodynamics": [
+    {"name": "spiceypy", "version": "*", "source": "conda", "channel": "conda-forge", "description": "NASA JPL SPICE toolkit Python wrapper - ephemeris and geometry", "tier": "elite"},
+    {"name": "tudatpy", "version": "*", "source": "conda", "channel": "conda-forge", "description": "TU Delft Astrodynamics Toolbox - comprehensive orbital mechanics", "tier": "elite"},
+    {"name": "pykep", "version": "*", "source": "conda", "channel": "conda-forge", "description": "ESA Advanced Concepts Team - trajectory optimization and mission design", "tier": "elite"},
+    {"name": "pygmo", "version": "*", "source": "conda", "channel": "conda-forge", "description": "ESA Parallel Global Multiobjective Optimizer - multi-objective optimization", "tier": "elite"},
+    {"name": "poliastro", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Orbital mechanics Python library - fast, pure-Python implementation", "tier": "elite"},
+    {"name": "astropy", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Astronomy core library - coordinates, units, time", "tier": "elite"},
+    {"name": "sgp4", "version": "*", "source": "conda", "channel": "conda-forge", "description": "US Space Force SGP4 satellite propagation standard", "tier": "elite"},
+    {"name": "rebound", "version": "*", "source": "conda", "channel": "conda-forge", "description": "N-body dynamics and planetary science simulations", "tier": "elite"},
+    {"name": "emcee", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Affine Invariant Markov Chain Monte Carlo for Bayesian inference", "tier": "elite"},
+    {"name": "skyfield", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Astronomical positioning - accurate ephemeris calculations", "tier": "elite"},
+    {"name": "heyoka", "version": "*", "source": "conda", "channel": "conda-forge", "description": "ESA - High precision integrator for spacecraft dynamics", "tier": "elite"},
+    {"name": "anise", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Autonomous Navigation and Satellite Geometry Engine", "tier": "elite"},
+    {"name": "nyx-space", "version": "*", "source": "conda", "channel": "conda-forge", "description": "High-fidelity astrodynamics simulation - lunar missions validated", "tier": "elite"},
+    {"name": "beyond", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Community astrodynamics toolkit - comprehensive orbital mechanics", "tier": "elite"}
+  ],
+  "scientific_computing": [
+    {"name": "numpy", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Numerical computing foundation", "tier": "elite"},
+    {"name": "scipy", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Scientific computing algorithms - optimization, integration, linear algebra", "tier": "elite"},
+    {"name": "h5py", "version": "*", "source": "conda", "channel": "conda-forge", "description": "HDF5 file format for large datasets", "tier": "advanced"},
+    {"name": "uncertainties", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Error propagation and uncertainty quantification", "tier": "advanced"},
+    {"name": "statsmodels", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Statistical modeling and hypothesis testing", "tier": "advanced"},
+    {"name": "sympy", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Symbolic mathematics - analytical solutions", "tier": "advanced"},
+    {"name": "mpmath", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Arbitrary precision arithmetic", "tier": "intermediate"}
+  ],
+  "data_visualization": [
+    {"name": "plotly", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Interactive 3D visualization - orbital trajectories, spacecraft attitude", "tier": "elite"},
+    {"name": "jupyter", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Interactive notebooks for analysis and documentation", "tier": "elite"},
+    {"name": "mayavi", "version": "*", "source": "conda", "channel": "conda-forge", "description": "3D scientific visualization engine", "tier": "advanced"},
+    {"name": "VPython", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Real-time 3D physics visualization", "tier": "advanced"},
+    {"name": "corner", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Visualize high-dimensional posteriors from MCMC", "tier": "advanced"}
+  ],
+  "machine_learning": [
+    {"name": "scikit-learn", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Classical ML algorithms - classification, regression, clustering", "tier": "elite"},
+    {"name": "pytorch", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Deep learning framework - neural networks for trajectory prediction", "tier": "elite"},
+    {"name": "jax", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Composable transformations - autodiff, vmap for scientific computing", "tier": "advanced"},
+    {"name": "xgboost", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Gradient boosting for anomaly detection in telemetry", "tier": "advanced"},
+    {"name": "lightgbm", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Fast gradient boosting - satellite event detection", "tier": "advanced"},
+    {"name": "catboost", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Categorical boosting - spacecraft fault diagnosis", "tier": "intermediate"},
+    {"name": "transformers", "version": "*", "source": "pypi", "channel": "pypi", "description": "Hugging Face transformers for sequence modeling", "tier": "advanced"},
+    {"name": "cupy", "version": "*", "source": "conda", "channel": "conda-forge", "description": "GPU-accelerated NumPy alternative for high-performance computing", "tier": "advanced"}
+  ],
+  "astronomy_physics": [
+    {"name": "astroquery", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Query astronomical databases - NASA, ESA services", "tier": "advanced"},
+    {"name": "photutils", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Image processing and photometry for space images", "tier": "advanced"},
+    {"name": "specutils", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Spectral analysis tools for astrophysics", "tier": "advanced"},
+    {"name": "healpy", "version": "*", "source": "conda", "channel": "conda-forge", "description": "HEALPix spherical pixelization for celestial sphere analysis", "tier": "advanced"},
+    {"name": "astroml", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Machine learning for astronomy and astrophysics", "tier": "advanced"},
+    {"name": "gwpy", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Gravitational wave data analysis", "tier": "advanced"},
+    {"name": "pycbc", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Compact binary coalescence detection and analysis", "tier": "advanced"},
+    {"name": "bilby", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Bayesian inference library for gravitational waves", "tier": "advanced"},
+    {"name": "arviz", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Posterior analysis and visualization for Bayesian models", "tier": "advanced"}
+  ],
+  "computer_vision_image_processing": [
+    {"name": "opencv-python", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Computer vision - image processing and spacecraft feature detection", "tier": "elite"},
+    {"name": "albumentations", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Image augmentation for training spacecraft detection models", "tier": "advanced"},
+    {"name": "torchvision", "version": "*", "source": "conda", "channel": "conda-forge", "description": "PyTorch vision models - satellite image classification", "tier": "advanced"},
+    {"name": "PyOpenGL", "version": "*", "source": "conda", "channel": "conda-forge", "description": "OpenGL rendering for 3D visualization", "tier": "intermediate"}
+  ],
+  "statistical_bayesian": [
+    {"name": "pymc", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Bayesian statistical modeling with MCMC", "tier": "elite"},
+    {"name": "numpyro", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Probabilistic programming with JAX backend", "tier": "advanced"}
+  ],
+  "advanced_computing": [
+    {"name": "diffrax", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Differentiable ODE solvers for automatic differentiation through dynamics", "tier": "advanced"},
+    {"name": "haystack", "version": "*", "source": "pypi", "channel": "pypi", "description": "LLM framework for AI-assisted analysis", "tier": "intermediate"}
+  ],
+  "nlp_text": [
+    {"name": "spacy", "version": "*", "source": "conda", "channel": "conda-forge", "description": "NLP for parsing mission documents and technical reports", "tier": "intermediate"}
+  ],
+  "robotics_cad": [
+    {"name": "modern-robotics", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Robot kinematics and dynamics - spacecraft manipulators", "tier": "advanced"},
+    {"name": "pythonocc", "version": "*", "source": "conda", "channel": "conda-forge", "description": "CAD geometry processing - spacecraft design", "tier": "advanced"},
+    {"name": "trimesh", "version": "*", "source": "conda", "channel": "conda-forge", "description": "3D mesh processing - satellite models", "tier": "advanced"},
+    {"name": "shapely", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Geometric operations - orbit collision detection", "tier": "advanced"},
+    {"name": "networkx", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Graph algorithms - mission network analysis", "tier": "intermediate"}
+  ],
+  "geospatial": [
+    {"name": "geopandas", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Geospatial analysis - ground station mapping", "tier": "advanced"}
+  ],
+  "data_processing": [
+    {"name": "polars", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Fast dataframe library - satellite telemetry processing", "tier": "elite"},
+    {"name": "pandas", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Data manipulation and analysis", "tier": "elite"}
+  ],
+  "messaging_orchestration": [
+    {"name": "pyzmq", "version": "*", "source": "conda", "channel": "conda-forge", "description": "ZeroMQ message passing - ground station communications", "tier": "advanced"},
+    {"name": "prefect", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Workflow orchestration for mission operations", "tier": "advanced"},
+    {"name": "airflow", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Apache Airflow for complex mission planning workflows", "tier": "advanced"},
+    {"name": "pyserial", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Serial port communication - spacecraft telemetry", "tier": "intermediate"}
+  ],
+  "web_api": [
+    {"name": "fastapi", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Modern API framework for mission control systems", "tier": "advanced"}
+  ],
+  "security_devops": [
+    {"name": "cryptography", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Secure communications for satellite command links", "tier": "advanced"},
+    {"name": "paramiko", "version": "*", "source": "conda", "channel": "conda-forge", "description": "SSH client library for remote ground station management", "tier": "advanced"},
+    {"name": "loguru", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Logging framework for mission operations", "tier": "intermediate"}
+  ],
+  "documentation": [
+    {"name": "sphinx", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Documentation generation for projects", "tier": "intermediate"}
+  ],
+  "utilities": [
+    {"name": "arrow", "version": "*", "source": "conda", "channel": "conda-forge", "description": "Date/time utilities for mission timeline management", "tier": "intermediate"}
+  ]
+}
